@@ -10,11 +10,12 @@ jobs:
       - name: firstJob script
         shell: cmd
         run: echo Hello world! 1st job
+        
   secondjob:
     runs-on: ubuntu-latest
     steps:
       - name: secondJob script
         shell: bash
-        run: e|
+        run: |
           echo 2nd job 1st line
           echo 2nd job 2nd line
